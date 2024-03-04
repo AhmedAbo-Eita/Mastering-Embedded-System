@@ -1,0 +1,19 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 4, 2024
+ *      Author: es-ahmedabdellatif20
+ */
+
+#include <stdio.h>
+
+int number;
+
+void main()
+{
+	 // take input from user
+	printf("Enter an integar : ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d", &number);
+	fflush(stdin); fflush(stdout);
+}

@@ -1,0 +1,32 @@
+/*
+ * main.c
+ *
+ *  Created on: Mar 4, 2024
+ *      Author: es-ahmedabdellatif20
+ */
+
+#include <stdio.h>
+
+float number;
+
+void main()
+{
+	//take inputs from user
+	printf("Enter a number");
+	fflush(stdin); fflush(stdout);
+	scanf("%f", &number);
+	fflush(stdin); fflush(stdout);
+
+	if (number < 0 )
+	{
+		printf("%d is negative ", number);
+	}
+	else if (number > 0)
+	{
+		printf("%d is positive ", number);
+	}
+	else{
+		printf("number is zero");
+	}
+
+}

@@ -1,0 +1,10 @@
+23:53:17 **** Incremental Build of configuration Debug for project HW2_EX7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:12:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o HW2_EX7.exe main.o 
+
+23:53:17 Build Finished (took 277ms)
+
