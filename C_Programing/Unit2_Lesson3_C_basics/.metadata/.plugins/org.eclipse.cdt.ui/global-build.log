@@ -1,0 +1,175 @@
+02:22:06 **** Rebuild of configuration Debug for project HW2_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:20:12: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+   printf("%d is odd ");
+            ^
+..\main.c:23:12: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+   printf("%d is even ");
+            ^
+gcc -o HW2_EX1.exe main.o 
+Info: Nothing to build for HW2_EX1
+02:22:56 **** Incremental Build of configuration Debug for project HW2_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o HW2_EX1.exe main.o 
+Info: Nothing to build for HW2_EX1
+02:23:32 **** Incremental Build of configuration Debug for project HW2_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o HW2_EX1.exe main.o 
+Info: Nothing to build for HW2_EX1
+Info: Nothing to build for HW2_EX1
+02:23:57 **** Incremental Build of configuration Debug for project HW2_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o HW2_EX1.exe main.o 
+Info: Nothing to build for HW2_EX1
+02:24:29 **** Incremental Build of configuration Debug for project HW2_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o HW2_EX1.exe main.o 
+Info: Nothing to build for HW2_EX1
+02:25:27 **** Incremental Build of configuration Debug for project HW2_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:28:9: warning: 'return' with a value, in function returning void
+  return 0;
+         ^
+..\main.c:11:6: note: declared here
+ void main ()
+      ^~~~
+gcc -o HW2_EX1.exe main.o 
+Info: Nothing to build for HW2_EX1
+02:25:48 **** Incremental Build of configuration Debug for project HW2_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o HW2_EX1.exe main.o 
+02:25:59 **** Incremental Build of configuration Debug for project HW2_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o HW2_EX1.exe main.o 
+Info: Nothing to build for HW2_EX1
+02:44:22 **** Rebuild of configuration Debug for project HW2_EX2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:20:14: error: 'A' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+              ^
+..\main.c:20:14: note: each undeclared identifier is reported only once for each function it appears in
+..\main.c:20:28: error: 'a' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+                            ^
+..\main.c:20:42: error: 'E' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+                                          ^
+..\main.c:20:55: error: 'e' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+                                                       ^
+..\main.c:20:69: error: 'O' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+                                                                     ^
+..\main.c:20:83: error: 'o' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+                                                                                   ^
+..\main.c:20:97: error: 'u' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+                                                                                                 ^
+..\main.c:20:111: error: 'U' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+                                                                                                               ^
+..\main.c:20:125: error: 'i' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+                                                                                                                             ^
+..\main.c:20:139: error: 'I' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+                                                                                                                                           ^
+02:45:27 **** Incremental Build of configuration Debug for project HW2_EX2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+..\main.c: In function 'main':
+..\main.c:20:14: error: 'A' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+              ^
+..\main.c:20:14: note: each undeclared identifier is reported only once for each function it appears in
+..\main.c:20:28: error: 'a' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+                            ^
+..\main.c:20:42: error: 'E' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+                                          ^
+..\main.c:20:55: error: 'e' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+                                                       ^
+..\main.c:20:69: error: 'O' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+                                                                     ^
+..\main.c:20:83: error: 'o' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+                                                                                   ^
+..\main.c:20:97: error: 'u' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+                                                                                                 ^
+..\main.c:20:111: error: 'U' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+                                                                                                               ^
+..\main.c:20:125: error: 'i' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+                                                                                                                             ^
+..\main.c:20:139: error: 'I' undeclared (first use in this function)
+  if(input == A || input == a || input == E || input== e || input == O || input == o || input == u || input == U || input == i || input == I)
+                                                                                                                                           ^
+02:46:12 **** Incremental Build of configuration Debug for project HW2_EX2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o HW2_EX2.exe main.o 
+Info: Nothing to build for HW2_EX2
+Info: Nothing to build for HW2_EX2
+Info: Nothing to build for HW2_EX2
+Info: Nothing to build for HW2_EX2
+02:47:48 **** Incremental Build of configuration Debug for project HW2_EX2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main ()
+      ^~~~
+gcc -o HW2_EX2.exe main.o 
+Info: Nothing to build for HW2_EX2
+Info: Nothing to build for HW2_EX2
+Info: Nothing to build for HW2_EX2

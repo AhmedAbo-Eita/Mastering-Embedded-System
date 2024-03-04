@@ -1,0 +1,51 @@
+######################EX1###################
+
+#include <stdio.h>
+
+int num = 0;
+void main ()
+{
+	//take input from user
+	printf("Enter an integer you want to check: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d", &num);
+	fflush(stdin); fflush(stdout);
+
+	// check if the number is odd or even
+	if(num%2 == 0 )
+	{
+		printf("%d is even ", num);
+	}
+	else
+	{
+		printf("%d is odd ", num);
+	}
+
+}
+
+######################EX2###################
+
+#include <stdio.h>
+
+char input = 0; // input alphabet from user
+void main ()
+{
+	//take input from user
+	printf("Enter an alphabet: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%c", &input);
+	fflush(stdin); fflush(stdout);
+
+	// check if the alphabet  is Vowel or consonant
+	if(input == 'A' || input == 'a' || input == 'E' || input== 'e' || input == 'O' || input == 'o' || input == 'u' || input == 'U' || input == 'i' || input == 'I')
+	{
+		printf("%c is a vowel ", input);
+	}
+	else
+	{
+		printf("%c is a consonant ", input);
+	}
+
+}
+
+
