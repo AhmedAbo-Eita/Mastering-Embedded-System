@@ -1,0 +1,20 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 21, 2024
+ *      Author: es-ahmedabdellatif20
+ */
+
+#include <stdio.h>
+
+int main()
+{
+	float mat1[2][2]; // the first matrix
+	float mat2[2][2]; // the second matrix
+	printf("Enter the elements of 1st matrix");
+	fflsush(stduin);
+
+	return 0;
+}
+
+

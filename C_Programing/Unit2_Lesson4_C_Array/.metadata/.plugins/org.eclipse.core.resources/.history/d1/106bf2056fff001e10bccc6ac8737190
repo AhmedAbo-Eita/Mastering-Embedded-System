@@ -1,0 +1,47 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 21, 2024
+ *      Author: es-ahmedabdellatif20
+ */
+
+#include <stdio.h>
+
+float a[2][2]; // the first matrix
+float b[2][2]; // the second matrix
+int i = 0; // outer loop counter
+int j = 0; // inner loop counter
+int l = 0; // outer loop counter
+int m = 0; // inner loop counter
+int main()
+{
+	printf("Enter the elements of 1st matrix \n");
+	fflush(stdin); fflush(stdout);
+
+	for(i=0; i<2 ;i++)
+	{
+		for(j=0 ; j<2 ; j++)
+		{
+			printf("Enter a%d%d:",i,j);
+			fflush(stdin); fflush(stdout);
+			scanf("%f", &a[i][j]);
+		}
+	}
+
+	fflush(stdin); fflush(stdout);
+	printf("Enter the elements of 2nd matrix \n");
+	fflush(stdin); fflush(stdout);
+
+	for(l=0; l<2 ;i++)
+		{
+			for(m=0 ; m<2 ; j++)
+			{
+				printf("Enter b%d%d:",i,j);
+				fflush(stdin); fflush(stdout);
+				scanf("%f", &b[l][m]);
+			}
+		}
+	return 0;
+}
+
+

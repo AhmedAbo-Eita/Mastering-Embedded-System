@@ -1,0 +1,81 @@
+01:39:02 **** Incremental Build of configuration Debug for project MW_Arrays_EX1 ****
+Info: Internal Builder is used for build
+gcc -o MW_Arrays_EX1.exe main.o 
+Info: Nothing to build for MW_Arrays_EX1
+01:46:11 **** Incremental Build of configuration Debug for project MW_Arrays_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:48:6: error: invalid operands to binary + (have 'float (*)[2]' and 'float (*)[2]')
+  c =a+b
+     ~^
+..\main.c:50:2: error: expected ';' before 'fflush'
+  fflush(stdin); fflush(stdout);
+  ^~~~~~
+..\main.c:56:20: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+     printf("Enter %d%d\t",c[i][j]);
+                    ^
+..\main.c:56:22: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+     printf("Enter %d%d\t",c[i][j]);
+                      ^
+01:46:55 **** Incremental Build of configuration Debug for project MW_Arrays_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:48:6: error: invalid operands to binary + (have 'float (*)[2]' and 'float (*)[2]')
+  c =a+b
+     ~^
+..\main.c:50:2: error: expected ';' before 'fflush'
+  fflush(stdin); fflush(stdout);
+  ^~~~~~
+..\main.c:56:22: warning: format '%f' expects a matching 'double' argument [-Wformat=]
+     printf("Enter %f%f\t",c[i][j]);
+                      ^
+01:47:11 **** Incremental Build of configuration Debug for project MW_Arrays_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:48:6: error: invalid operands to binary + (have 'float (*)[2]' and 'float (*)[2]')
+  c =a+b;
+     ~^
+..\main.c:56:22: warning: format '%f' expects a matching 'double' argument [-Wformat=]
+     printf("Enter %f%f\t",c[i][j]);
+                      ^
+01:47:13 **** Incremental Build of configuration Debug for project MW_Arrays_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:48:6: error: invalid operands to binary + (have 'float (*)[2]' and 'float (*)[2]')
+  c =a+b;
+     ~^
+..\main.c:56:22: warning: format '%f' expects a matching 'double' argument [-Wformat=]
+     printf("Enter %f%f\t",c[i][j]);
+                      ^
+01:47:22 **** Incremental Build of configuration Debug for project MW_Arrays_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:48:7: error: invalid operands to binary + (have 'float (*)[2]' and 'float (*)[2]')
+  c = a+b;
+      ~^
+..\main.c:56:22: warning: format '%f' expects a matching 'double' argument [-Wformat=]
+     printf("Enter %f%f\t",c[i][j]);
+                      ^
+01:48:37 **** Incremental Build of configuration Debug for project MW_Arrays_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:62:22: warning: format '%f' expects a matching 'double' argument [-Wformat=]
+     printf("Enter %f%f\t",c[i][j]);
+                      ^
+gcc -o MW_Arrays_EX1.exe main.o 
+01:49:10 **** Incremental Build of configuration Debug for project MW_Arrays_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o MW_Arrays_EX1.exe main.o 
+Info: Nothing to build for MW_Arrays_EX1
+01:50:02 **** Incremental Build of configuration Debug for project MW_Arrays_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o MW_Arrays_EX1.exe main.o 
+Info: Nothing to build for MW_Arrays_EX1

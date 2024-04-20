@@ -154,3 +154,45 @@ Info: Nothing to build for HW2_EX8
 Info: Nothing to build for HW2_EX8
 Info: Nothing to build for HW2_EX8
 Info: Nothing to build for HW2_EX8
+Info: Nothing to build for HW2_EX1
+Info: Nothing to build for HW2_EX1
+Info: Nothing to build for HW2_EX1
+Info: Nothing to build for HW2_EX1
+Info: Nothing to build for HW2_EX2
+Info: Nothing to build for HW2_EX2
+Info: Nothing to build for HW2_EX2
+Info: Nothing to build for HW2_EX3
+Info: Nothing to build for HW2_EX3
+Info: Nothing to build for HW2_EX4
+Info: Nothing to build for HW2_EX4
+Info: Nothing to build for HW2_EX4
+Info: Nothing to build for HW2_EX4
+Info: Nothing to build for HW2_EX5
+Info: Nothing to build for HW2_EX5
+Info: Nothing to build for HW2_EX5
+17:26:41 **** Incremental Build of configuration Debug for project HW2_EX6 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:12:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o HW2_EX6.exe main.o 
+Info: Nothing to build for HW2_EX6
+Info: Nothing to build for HW2_EX6
+Info: Nothing to build for HW2_EX6
+Info: Nothing to build for HW2_EX6
+Info: Nothing to build for HW2_EX6
+Info: Nothing to build for HW2_EX6
+Info: Nothing to build for HW2_EX6
+Info: Nothing to build for HW2_EX6
+17:33:34 **** Incremental Build of configuration Debug for project HW2_EX7 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:12:6: warning: return type of 'main' is not 'int' [-Wmain]
+ void main()
+      ^~~~
+gcc -o HW2_EX7.exe main.o 
+Info: Nothing to build for HW2_EX7
+Info: Nothing to build for HW2_EX7
+Info: Nothing to build for HW2_EX8
+Info: Nothing to build for HW2_EX8
