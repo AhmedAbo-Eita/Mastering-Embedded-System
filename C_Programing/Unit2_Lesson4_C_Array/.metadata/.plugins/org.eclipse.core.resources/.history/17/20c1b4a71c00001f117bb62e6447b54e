@@ -1,0 +1,72 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 21, 2024
+ *      Author: es-ahmedabdellatif20
+ */
+
+#include <stdio.h>
+int row, column;
+int innercount, outercount;
+
+int main()
+{
+	// let the user enter the dimentions of matrix
+	printf("Enter number of rows and columns of matrix: ");
+	fflush(stdin); fflush(stdout);
+	scanf("%d %d", &row, &column);
+
+
+	int mat[row][column];// input matrix
+	int mat_t[column][row];// input matrix
+
+	printf("Enter elements of matrix: \n");
+	fflush(stdin); fflush(stdout);
+
+	// take values of elements from user
+	for(outercount=0 ;outercount<row ;outercount++)
+	{
+		for(innercount=0 ;innercount<column ;innercount++)
+		{
+			printf("Enter elements a%d%d: ", outercount+1, innercount+1);
+			fflush(stdin); fflush(stdout);
+			scanf("%d", &mat[outercount][innercount]);
+		}
+	}
+
+	// print user entered matrix
+	printf("Entered matrix:\r\n");
+	fflush(stdin); fflush(stdout);
+	for(outercount=0 ;outercount<row ;outercount++)
+	{
+		for(innercount=0 ;innercount<column ;innercount++)
+		{
+			printf("%d \t", mat[outercount][innercount] );
+		}
+		printf("\r\n");
+	}
+
+	/*// finding transpose of matrix
+	for(outercount=0 ;outercount<row ;outercount++)
+	{
+		for(innercount=0 ;innercount<column ;innercount++)
+		{
+			mat_t[innercount][outercount] = mat[outercount][innercount];
+		}
+	}*/
+
+	// print transpose matrix
+	printf("Transpose of matrix:\r\n");
+	fflush(stdin); fflush(stdout);
+	for(outercount=0 ;outercount<column ;outercount++)
+	{
+		for(innercount=0 ;innercount<row ;innercount++)
+		{
+			printf("%d \t", mat_t[outercount][innercount]);
+		}
+		printf("\r\n");
+	}
+
+	return 0;
+}
+

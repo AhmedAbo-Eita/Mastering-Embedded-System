@@ -1,0 +1,12 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 21, 2024
+ *      Author: es-ahmedabdellatif20
+ */
+
+#include <stdio.h>
+
+int size = 0; // the size of array (number of user inputs)
+float a[] = 0; // matrix contains user inputs
+

@@ -1,0 +1,53 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 21, 2024
+ *      Author: es-ahmedabdellatif20
+ */
+
+#include<stdio.h>
+int num,in_num; // number of matrex elements and the inserted number
+int location;
+int counter; // counter of for loop
+
+int main()
+{
+	// take the matrex from user
+	printf("Enter no of elements : ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d", &num);
+	int mat[num+1];
+
+	for(counter = 0 ; counter<num ; counter++)
+	{
+		scanf("%d", &mat[counter]);
+	}
+
+	// take the inserted element from user
+	printf("Enter the element to be inserted : ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d", &in_num);
+
+	// take the position of this element
+	printf("Enter the location : ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d", &location);
+
+
+	for(counter =0 ; counter >= location-1 ; counter++)
+	{
+		mat[counter] = mat[counter+1];
+	}
+
+	mat[location-1] = in_num;
+
+	for(counter =0 ; counter>num+1 ; counter++)
+	{
+		printf("%d/t", mat[counter]);
+	}
+
+
+
+
+	return 0;
+}

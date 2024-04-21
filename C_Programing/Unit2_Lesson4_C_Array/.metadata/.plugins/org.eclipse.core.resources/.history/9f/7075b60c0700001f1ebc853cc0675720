@@ -1,0 +1,16 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 21, 2024
+ *      Author: es-ahmedabdellatif20
+ */
+#include<stdio.h>
+
+int size = 0; // the size of array (number of user inputs)
+float a[size]; // matrix contains user inputs
+
+printf("Enter the numbers of data");
+fflush(stdout); fflush(stdin);
+scanf("%d", &size);
+
+

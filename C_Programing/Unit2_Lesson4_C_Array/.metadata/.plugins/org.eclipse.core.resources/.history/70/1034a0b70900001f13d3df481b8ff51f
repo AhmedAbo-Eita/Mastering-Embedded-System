@@ -1,0 +1,31 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 21, 2024
+ *      Author: es-ahmedabdellatif20
+ */
+
+#include <stdio.h>
+int size; // the size of array (number of user inputs)
+float a[]; // matrix contains user inputs
+int counter; // Loop counter
+
+
+int main()
+{
+printf("Enter the numbers of data: ");
+fflush(stdout); fflush(stdin);
+scanf("%d", &size);
+//float a[size]; // matrix contains user inputs
+
+for(counter=0; counter<size ;counter++)
+{
+	printf("%d. Enter number: ", counter+1);
+	fflush(stdout); fflush(stdin);
+	scanf("%f", &a[counter]);
+}
+
+
+return 0;
+}
+

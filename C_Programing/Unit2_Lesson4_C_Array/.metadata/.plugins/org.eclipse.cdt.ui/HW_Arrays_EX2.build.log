@@ -1,0 +1,9 @@
+20:36:30 **** Incremental Build of configuration Debug for project HW_Arrays_EX2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o HW_Arrays_EX2.exe main.o 
+c:/mingw/bin/../lib/gcc/mingw32/6.3.0/../../../../mingw32/bin/ld.exe: cannot open output file HW_Arrays_EX2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+
+20:36:31 Build Finished (took 294ms)
+

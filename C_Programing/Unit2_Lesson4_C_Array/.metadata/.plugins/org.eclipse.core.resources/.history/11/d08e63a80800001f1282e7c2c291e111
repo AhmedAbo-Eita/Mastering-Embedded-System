@@ -1,0 +1,29 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 21, 2024
+ *      Author: es-ahmedabdellatif20
+ */
+
+#include <stdio.h>
+
+int size; // the size of array (number of user inputs)
+float a[]; // matrix contains user inputs
+int outer_count, inner_count;
+
+
+int main()
+{
+printf("Enter the numbers of data: ");
+fflush(stdout); fflush(stdin);
+scanf("%d", &size);
+
+for(outer_count=0; outer_count<size ;outer_count++)
+{
+
+}
+
+
+return 0;
+}
+

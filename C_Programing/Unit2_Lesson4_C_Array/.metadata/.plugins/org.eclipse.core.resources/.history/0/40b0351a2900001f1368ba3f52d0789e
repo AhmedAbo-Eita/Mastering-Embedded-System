@@ -1,0 +1,29 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 21, 2024
+ *      Author: es-ahmedabdellatif20
+ */
+
+#include<stdio.h>
+int num; // number of matrex elements
+int counter; // counter of for loop
+
+int main()
+{
+	printf("Enter no of elements : ");
+	fflush(stdin);fflush(stdout);
+	scanf("%d", &num);
+	int mat[num+1];
+
+	for(counter = 0 ; counter<num ; counter++)
+	{
+		scanf("%d", &mat[counter]);
+	}
+
+
+
+
+
+	return 0;
+}
