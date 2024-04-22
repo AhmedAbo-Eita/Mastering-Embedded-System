@@ -1,0 +1,25 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 22, 2024
+ *      Author: es-ahmedabdellatif20
+ */
+#include<stdio.h>
+#include<string.h>
+
+float a[];
+int size;// the size of array
+
+int main()
+{
+	printf("Enter a string :");
+	fflush(stdin);fflush(stdout);
+	gets(a);
+
+	size = strlen(a);
+
+
+
+	return 0;
+}
+

@@ -63,3 +63,713 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 gcc -o HW_Arrays_EX5.exe main.o 
 Info: Nothing to build for HW_Arrays_EX5
+23:44:42 **** Rebuild of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:15:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c: At top level:
+..\main.c:9:7: warning: array 'a' assumed to have one element
+ float a[];
+       ^
+gcc -o HW_String_EX1.exe main.o 
+Info: Nothing to build for HW_String_EX1
+Info: Nothing to build for HW_String_EX1
+Info: Nothing to build for HW_String_EX1
+23:49:50 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:15:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c: At top level:
+..\main.c:9:7: warning: array 'a' assumed to have one element
+ float a[];
+       ^
+gcc -o HW_String_EX1.exe main.o 
+00:03:22 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:22:16: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  size = strlen(a);
+                ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\main.c:35:24: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+  printf("frequency of %s = %d", input, flag);
+                        ^
+..\main.c: At top level:
+..\main.c:10:7: warning: array 'a' assumed to have one element
+ float a[];
+       ^
+gcc -o HW_String_EX1.exe main.o 
+Info: Nothing to build for HW_String_EX1
+00:04:47 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:22:16: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  size = strlen(a);
+                ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\main.c:30:20: warning: character constant too long for its type
+   if(a[counter] == 'input')
+                    ^~~~~~~
+..\main.c:35:24: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+  printf("frequency of %s = %d", input, flag);
+                        ^
+..\main.c: At top level:
+..\main.c:10:7: warning: array 'a' assumed to have one element
+ float a[];
+       ^
+gcc -o HW_String_EX1.exe main.o 
+Info: Nothing to build for HW_String_EX1
+00:06:12 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:7: error: incompatible type for argument 1 of 'gets'
+  gets(a[0]);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'float'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:22:16: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  size = strlen(a);
+                ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\main.c:31:20: warning: character constant too long for its type
+   if(a[counter] == 'input')
+                    ^~~~~~~
+..\main.c:36:24: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+  printf("frequency of %s = %d", input, flag);
+                        ^
+..\main.c: At top level:
+..\main.c:10:7: warning: array 'a' assumed to have one element
+ float a[];
+       ^
+00:06:16 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:8: error: expected ')' before ']' token
+  gets(a]);
+        ^
+..\main.c:19:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a]);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:19:8: error: expected ';' before ']' token
+  gets(a]);
+        ^
+..\main.c:19:8: error: expected statement before ']' token
+..\main.c:19:9: error: expected statement before ')' token
+  gets(a]);
+         ^
+..\main.c:22:16: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  size = strlen(a);
+                ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\main.c:31:20: warning: character constant too long for its type
+   if(a[counter] == 'input')
+                    ^~~~~~~
+..\main.c:36:24: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+  printf("frequency of %s = %d", input, flag);
+                        ^
+..\main.c: At top level:
+..\main.c:10:7: warning: array 'a' assumed to have one element
+ float a[];
+       ^
+00:06:21 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:8: error: expected ')' before ']' token
+  gets(a]);
+        ^
+..\main.c:19:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a]);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:19:8: error: expected ';' before ']' token
+  gets(a]);
+        ^
+..\main.c:19:8: error: expected statement before ']' token
+..\main.c:19:9: error: expected statement before ')' token
+  gets(a]);
+         ^
+..\main.c:22:16: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  size = strlen(a);
+                ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\main.c:31:20: warning: character constant too long for its type
+   if(a[counter] == 'input')
+                    ^~~~~~~
+..\main.c:36:24: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+  printf("frequency of %s = %d", input, flag);
+                        ^
+..\main.c: At top level:
+..\main.c:10:7: warning: array 'a' assumed to have one element
+ float a[];
+       ^
+00:06:44 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:8: error: expected ')' before ']' token
+  gets(a]);
+        ^
+..\main.c:19:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a]);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:19:8: error: expected ';' before ']' token
+  gets(a]);
+        ^
+..\main.c:19:8: error: expected statement before ']' token
+..\main.c:19:9: error: expected statement before ')' token
+  gets(a]);
+         ^
+..\main.c:22:16: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  size = strlen(a);
+                ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\main.c:31:20: warning: character constant too long for its type
+   if(a[counter] == 'input')
+                    ^~~~~~~
+..\main.c: At top level:
+..\main.c:10:7: warning: array 'a' assumed to have one element
+ float a[];
+       ^
+00:06:46 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:8: error: expected ')' before ']' token
+  gets(a]);
+        ^
+..\main.c:19:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a]);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:19:8: error: expected ';' before ']' token
+  gets(a]);
+        ^
+..\main.c:19:8: error: expected statement before ']' token
+..\main.c:19:9: error: expected statement before ')' token
+  gets(a]);
+         ^
+..\main.c:22:16: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  size = strlen(a);
+                ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\main.c:31:20: warning: character constant too long for its type
+   if(a[counter] == 'input')
+                    ^~~~~~~
+..\main.c: At top level:
+..\main.c:10:7: warning: array 'a' assumed to have one element
+ float a[];
+       ^
+00:07:10 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:8: error: expected ')' before ']' token
+  gets(a]);
+        ^
+..\main.c:19:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a]);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:19:8: error: expected ';' before ']' token
+  gets(a]);
+        ^
+..\main.c:19:8: error: expected statement before ']' token
+..\main.c:19:9: error: expected statement before ')' token
+  gets(a]);
+         ^
+..\main.c:22:16: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  size = strlen(a);
+                ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\main.c:37:9: warning: too many arguments for format [-Wformat-extra-args]
+  printf("frequency of  = %d", input, flag);
+         ^~~~~~~~~~~~~~~~~~~~
+..\main.c: At top level:
+..\main.c:10:7: warning: array 'a' assumed to have one element
+ float a[];
+       ^
+00:07:17 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:8: error: expected ')' before ']' token
+  gets(a]);
+        ^
+..\main.c:19:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a]);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:19:8: error: expected ';' before ']' token
+  gets(a]);
+        ^
+..\main.c:19:8: error: expected statement before ']' token
+..\main.c:19:9: error: expected statement before ')' token
+  gets(a]);
+         ^
+..\main.c:22:16: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  size = strlen(a);
+                ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\main.c:37:9: warning: too many arguments for format [-Wformat-extra-args]
+  printf("frequency of  = %d", input, flag);
+         ^~~~~~~~~~~~~~~~~~~~
+..\main.c: At top level:
+..\main.c:10:7: warning: array 'a' assumed to have one element
+ float a[];
+       ^
+00:07:48 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:22:16: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  size = strlen(a);
+                ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\main.c:31:20: error: expected expression before 'int'
+   if(a[counter] == int(input))
+                    ^~~
+..\main.c:37:9: warning: too many arguments for format [-Wformat-extra-args]
+  printf("frequency of  = %d", input, flag);
+         ^~~~~~~~~~~~~~~~~~~~
+..\main.c: At top level:
+..\main.c:10:7: warning: array 'a' assumed to have one element
+ float a[];
+       ^
+00:07:57 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:22:16: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  size = strlen(a);
+                ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\main.c:31:20: error: expected expression before 'int'
+   if(a[counter] == int(input))
+                    ^~~
+..\main.c:37:9: warning: too many arguments for format [-Wformat-extra-args]
+  printf("frequency of  = %d", input, flag);
+         ^~~~~~~~~~~~~~~~~~~~
+..\main.c: At top level:
+..\main.c:10:7: warning: array 'a' assumed to have one element
+ float a[];
+       ^
+00:08:45 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:22:16: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  size = strlen(a);
+                ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\main.c:38:24: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+  printf("frequency of %s  = %d", input, flag);
+                        ^
+..\main.c: At top level:
+..\main.c:10:7: warning: array 'a' assumed to have one element
+ float a[];
+       ^
+gcc -o HW_String_EX1.exe main.o 
+00:09:10 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:22:16: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  size = strlen(a);
+                ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'float *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\main.c: At top level:
+..\main.c:10:7: warning: array 'a' assumed to have one element
+ float a[];
+       ^
+gcc -o HW_String_EX1.exe main.o 
+00:09:35 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:19:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:22:16: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  size = strlen(a);
+                ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\main.c: At top level:
+..\main.c:10:5: warning: array 'a' assumed to have one element
+ int a[];
+     ^
+gcc -o HW_String_EX1.exe main.o 
+00:10:10 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:29:38: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  for(counter = 0 ; counter <= strlen(a); counter++)
+                                      ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\main.c: At top level:
+..\main.c:10:5: warning: array 'a' assumed to have one element
+ int a[];
+     ^
+gcc -o HW_String_EX1.exe main.o 
+Info: Nothing to build for HW_String_EX1
+00:10:57 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:26:38: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  for(counter = 0 ; counter <= strlen(a); counter++)
+                                      ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\main.c: At top level:
+..\main.c:10:5: warning: array 'a' assumed to have one element
+ int a[];
+     ^
+gcc -o HW_String_EX1.exe main.o 
+Info: Nothing to build for HW_String_EX1
+00:11:47 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:26:31: error: expected expression before 'int'
+  for(counter = 0 ; counter <= int(strlen(a)); counter++)
+                               ^~~
+..\main.c: At top level:
+..\main.c:10:5: warning: array 'a' assumed to have one element
+ int a[];
+     ^
+00:11:57 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:26:38: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  for(counter = 0 ; counter <= strlen(a); counter++)
+                                      ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\main.c: At top level:
+..\main.c:10:5: warning: array 'a' assumed to have one element
+ int a[];
+     ^
+gcc -o HW_String_EX1.exe main.o 
+Info: Nothing to build for HW_String_EX1
+00:12:34 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:26:38: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  for(counter = 0 ; counter <= strlen(a); counter++)
+                                      ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+gcc -o HW_String_EX1.exe main.o 
+Info: Nothing to build for HW_String_EX1
+00:13:09 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+gcc -o HW_String_EX1.exe main.o 
+Info: Nothing to build for HW_String_EX1
+00:14:33 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:26:38: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  for(counter = 0 ; counter <= strlen(a); counter++)
+                                      ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+gcc -o HW_String_EX1.exe main.o 
+Info: Nothing to build for HW_String_EX1
+00:16:56 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:8: warning: passing argument 1 of 'fgets' from incompatible pointer type [-Wincompatible-pointer-types]
+  fgets(a, 100, stdin);
+        ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:673:41: note: expected 'char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * fgets (char *, int, FILE *);
+                                         ^~~~~
+..\main.c:25:38: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  for(counter = 0 ; counter <= strlen(a); counter++)
+                                      ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+gcc -o HW_String_EX1.exe main.o 
+Info: Nothing to build for HW_String_EX1
+00:17:55 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:26:38: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  for(counter = 0 ; counter <= strlen(a); counter++)
+                                      ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+gcc -o HW_String_EX1.exe main.o 
+Info: Nothing to build for HW_String_EX1
+00:18:50 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:26:38: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  for(counter = 0 ; counter <= strlen(a); counter++)
+                                      ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+..\main.c:28:20: warning: character constant too long for its type
+   if(a[counter] == 'input' )
+                    ^~~~~~~
+gcc -o HW_String_EX1.exe main.o 
+Info: Nothing to build for HW_String_EX1
+00:20:44 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+..\main.c:26:38: warning: passing argument 1 of 'strlen' from incompatible pointer type [-Wincompatible-pointer-types]
+  for(counter = 0 ; counter <  strlen(a); counter++)
+                                      ^
+In file included from ..\main.c:8:0:
+c:\mingw\include\string.h:83:41: note: expected 'const char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  size_t strlen (const char *) __MINGW_ATTRIB_PURE;
+                                         ^~~~~~
+gcc -o HW_String_EX1.exe main.o 
+Info: Nothing to build for HW_String_EX1
+00:21:16 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:18:7: warning: passing argument 1 of 'gets' from incompatible pointer type [-Wincompatible-pointer-types]
+  gets(a);
+       ^
+In file included from ..\main.c:7:0:
+c:\mingw\include\stdio.h:676:41: note: expected 'char *' but argument is of type 'int *'
+ _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+                                         ^~~~
+gcc -o HW_String_EX1.exe main.o 
+Info: Nothing to build for HW_String_EX1
+00:22:40 **** Incremental Build of configuration Debug for project HW_String_EX1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o HW_String_EX1.exe main.o 
+Info: Nothing to build for HW_String_EX1
+Info: Nothing to build for HW_String_EX1
+Info: Nothing to build for HW_String_EX1

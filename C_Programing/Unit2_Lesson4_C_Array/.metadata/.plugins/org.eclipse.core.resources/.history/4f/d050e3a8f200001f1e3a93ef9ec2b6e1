@@ -1,0 +1,22 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 22, 2024
+ *      Author: es-ahmedabdellatif20
+ */
+#include<stdio.h>
+
+float a[];
+
+int main()
+{
+	printf("Enter a string :");
+	fflush(stdin);fflush(stdout);
+	gets(a);
+
+
+
+
+	return 0;
+}
+
