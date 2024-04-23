@@ -1,0 +1,31 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 23, 2024
+ *      Author: es-ahmedabdellatif20
+ */
+
+#include<stdio.h>
+#include<string.h>
+
+char a[];// array contains the string
+int counter=0; // counter of loop
+int size=0;//size of array
+int main()
+{
+	// take input string from user
+	printf("Enter a string: ");
+	fflush(stdout);fflush(stdin);
+	gets(a);
+
+	//searching for 0 "the end of string
+	while(a[counter]!=0)
+	{
+		size++;
+		counter++;
+	}
+
+	printf("Length of string: %d", size);
+
+	return 0;
+}

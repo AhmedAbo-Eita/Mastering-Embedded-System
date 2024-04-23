@@ -1,0 +1,37 @@
+/*
+ * main.c
+ *
+ *  Created on: Apr 23, 2024
+ *      Author: es-ahmedabdellatif20
+ */
+
+#include<stdio.h>
+#include<string.h>
+
+char a[];// array contains the string
+int counter=0; // counter of loop
+
+int main()
+{
+	// take input string from user
+	printf("Enter a string: ");
+	fflush(stdout);fflush(stdin);
+	gets(a);
+	char a1[strlen(a)];
+
+	for(counter=0; counter < strlen(a);counter++)
+	{
+		a[counter] = a1[counter];
+	}
+
+	for(counter=0; counter < strlen(a);counter++)
+	{
+		a[counter]= a1[strlen(a)- counter];
+	}
+
+	for(counter=0; counter < strlen(a);counter++)
+	{
+		printf("Reverse string is : %c", a[counter]);
+	}
+	return 0;
+}

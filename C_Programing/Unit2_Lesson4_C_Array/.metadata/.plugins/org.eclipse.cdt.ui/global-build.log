@@ -773,3 +773,129 @@ gcc -o HW_String_EX1.exe main.o
 Info: Nothing to build for HW_String_EX1
 Info: Nothing to build for HW_String_EX1
 Info: Nothing to build for HW_String_EX1
+15:04:15 **** Rebuild of configuration Debug for project HW_String_EX2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: array 'a' assumed to have one element
+ char a[];// array contains the string
+      ^
+gcc -o HW_String_EX2.exe main.o 
+Info: Nothing to build for HW_String_EX2
+15:05:26 **** Incremental Build of configuration Debug for project HW_String_EX2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: array 'a' assumed to have one element
+ char a[];// array contains the string
+      ^
+gcc -o HW_String_EX2.exe main.o 
+Info: Nothing to build for HW_String_EX2
+Info: Nothing to build for HW_String_EX2
+15:27:12 **** Rebuild of configuration Debug for project HW_String_EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:33:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Reverse string is : ",a[counter]);
+          ^~~~~~~~~~~~~~~~~~~~~~
+..\main.c: At top level:
+..\main.c:11:6: warning: array 'a' assumed to have one element
+ char a[],a1[];// array contains the string
+      ^
+..\main.c:11:10: warning: array 'a1' assumed to have one element
+ char a[],a1[];// array contains the string
+          ^~
+gcc -o HW_String_EX3.exe main.o 
+Info: Nothing to build for HW_String_EX3
+15:28:20 **** Incremental Build of configuration Debug for project HW_String_EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:33:10: warning: too many arguments for format [-Wformat-extra-args]
+   printf("Reverse string is : ", a[counter]);
+          ^~~~~~~~~~~~~~~~~~~~~~
+..\main.c: At top level:
+..\main.c:11:6: warning: array 'a' assumed to have one element
+ char a[],a1[];// array contains the string
+      ^
+..\main.c:11:10: warning: array 'a1' assumed to have one element
+ char a[],a1[];// array contains the string
+          ^~
+gcc -o HW_String_EX3.exe main.o 
+Info: Nothing to build for HW_String_EX3
+15:29:27 **** Incremental Build of configuration Debug for project HW_String_EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: array 'a' assumed to have one element
+ char a[],a1[];// array contains the string
+      ^
+..\main.c:11:10: warning: array 'a1' assumed to have one element
+ char a[],a1[];// array contains the string
+          ^~
+gcc -o HW_String_EX3.exe main.o 
+Info: Nothing to build for HW_String_EX3
+15:29:53 **** Incremental Build of configuration Debug for project HW_String_EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:33:32: warning: format '%s' expects argument of type 'char *', but argument 2 has type 'int' [-Wformat=]
+   printf("Reverse string is : %s", a[counter]);
+                                ^
+..\main.c: At top level:
+..\main.c:11:6: warning: array 'a' assumed to have one element
+ char a[],a1[];// array contains the string
+      ^
+..\main.c:11:10: warning: array 'a1' assumed to have one element
+ char a[],a1[];// array contains the string
+          ^~
+gcc -o HW_String_EX3.exe main.o 
+Info: Nothing to build for HW_String_EX3
+15:30:24 **** Incremental Build of configuration Debug for project HW_String_EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: array 'a' assumed to have one element
+ char a[],a1[];// array contains the string
+      ^
+..\main.c:11:10: warning: array 'a1' assumed to have one element
+ char a[],a1[];// array contains the string
+          ^~
+gcc -o HW_String_EX3.exe main.o 
+Info: Nothing to build for HW_String_EX3
+15:31:32 **** Incremental Build of configuration Debug for project HW_String_EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c:11:6: warning: array 'a' assumed to have one element
+ char a[];// array contains the string
+      ^
+gcc -o HW_String_EX3.exe main.o 
+Info: Nothing to build for HW_String_EX3
+15:33:19 **** Incremental Build of configuration Debug for project HW_String_EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o HW_String_EX3.exe main.o 
+Info: Nothing to build for HW_String_EX3
+15:37:10 **** Incremental Build of configuration Debug for project HW_String_EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o HW_String_EX3.exe main.o 
+Info: Nothing to build for HW_String_EX3
+15:37:29 **** Incremental Build of configuration Debug for project HW_String_EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o HW_String_EX3.exe main.o 
+Info: Nothing to build for HW_String_EX3
+15:38:26 **** Incremental Build of configuration Debug for project HW_String_EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o HW_String_EX3.exe main.o 
+Info: Nothing to build for HW_String_EX3
+15:38:38 **** Incremental Build of configuration Debug for project HW_String_EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o HW_String_EX3.exe main.o 
+Info: Nothing to build for HW_String_EX3
+20:11:56 **** Rebuild of configuration Debug for project HW_String_EX3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -o HW_String_EX3.exe main.o 
+Info: Nothing to build for HW_String_EX3
+Info: Nothing to build for HW_String_EX3
