@@ -19,7 +19,7 @@ int main()
         }
     }
    
-    system("pause");
+    //system("pause");
     return 0;
 }
 bool prime_number(int num1)
