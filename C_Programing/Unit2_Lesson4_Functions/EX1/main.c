@@ -8,14 +8,14 @@ int main()
     printf("Enter two numbers (intervals): ");
     fflush(stdin);fflush(stdout);
     scanf("%d %d", &in1, &in2);
-    
+    printf("Prime numbers between %d and %d are: ", in1 , in2);
     int i = in1;
     // loop on the values between two numbers add call the fun that check if the num is prim or not
     for(i; i>=in1 && i<=in2; i++)
     {
         if( prime_number(i))
         {
-            printf("%d\n", i);
+            printf("%d ", i);
         }
     }
    
@@ -37,12 +37,8 @@ bool prime_number(int num1)
         if(num1%counter == 0)
         {
             return false;
-        }
-        else
-        {
-            return true;
-        }
+        } 
     }
-
+ return true;
 
 }
