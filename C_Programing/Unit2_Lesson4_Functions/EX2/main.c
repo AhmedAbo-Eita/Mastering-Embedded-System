@@ -18,8 +18,6 @@ int main()
         printf("Can't find the factorial of negative numbers");
     }
     
-    
-    //system("pause");
     return 0;
 }
 
