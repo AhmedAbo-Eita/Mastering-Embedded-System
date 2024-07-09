@@ -15,7 +15,8 @@ void reverse()
     if(in != '\n')
     {
         reverse();
-        printf("%c" , in);
+        
     }
+    printf("%c" , in);
 
 }
