@@ -3,8 +3,7 @@
 
 char arr[100];
 
-void reverseString(char *str, int start, int end);
-void reverseWords(char *str);
+void reverseWords(char arr1[]);
 
 int main() {
     printf("Enter the Sentence: ");
@@ -13,33 +12,32 @@ int main() {
     // Remove the newline character if present
     arr[strcspn(arr, "\n")] = '\0';
     reverseWords(arr);
-    printf("Reversed Sentence: %s\n", arr);
     return 0;
 }
 
-void reverseString(char *str, int start, int end) {
-    char temp;
-    while (start < end) {
-        temp = str[start];
-        str[start] = str[end];
-        str[end] = temp;
-        start++;
-        end--;
-    }
-}
+void reverseWords(char arr1[]) {
+    int length = strlen(arr1);
+    int end = length;
+    int start;
 
-void reverseWords(char *str) {
-    int length = strlen(str);
-    
-    // Step 1: Reverse the entire string
-    reverseString(str, 0, length - 1);
-    
-    // Step 2: Reverse each word in the reversed string
-    int start = 0;
-    for (int end = 0; end <= length; end++) {
-        if (str[end] == ' ' || str[end] == '\0') {
-            reverseString(str, start, end - 1);
-            start = end + 1;
+    for (int i = length - 1; i >= 0; i--) {
+        if (arr1[i] == ' ' || i == 0) {
+            if (i == 0) {
+                start = 0;
+            } else {
+                start = i + 1;
+            }
+
+            for (int j = start; j < end; j++) {
+                printf("%c", arr1[j]);
+            }
+
+            if (i > 0) {
+                printf(" ");
+            }
+
+            end = i;
         }
     }
+    printf("\n");
 }
