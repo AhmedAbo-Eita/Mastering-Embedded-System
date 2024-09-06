@@ -8,25 +8,27 @@
 #include "application.h"
 #include "util/delay.h"
 
-uint8_t counter = 0; // loop counter
+
+uint8_t flag = 0; // the reading of push button
+
 void app_init()
 {
-	// set pins 5,6,7 as output pins
-	set(DDRD,5);
-	set(DDRD,6);
-	set(DDRD,7);
+	//set pins 
+	clear(DDRD,2);
+	
+	// set pins 4 as output pins
+	set(DDRD,4);	//buzzer
+	
 	
 }
 void app_loop()
 {
-	for(counter = 0 ; counter<3; counter++)
+	if(get_value(PIND,2)==1)
 	{
-		set(PORTD,counter+5); // addetion of 5 because the first led connected with port d led 5
+		set(PORTD,4);
 		_delay_ms(500);
+		clear(PORTD,4);
 	}
-	for(counter = 7 ; counter>=5; counter--)
-	{
-		clear(PORTD,counter); 
-		_delay_ms(500);
-	}
+	
+	
 }
