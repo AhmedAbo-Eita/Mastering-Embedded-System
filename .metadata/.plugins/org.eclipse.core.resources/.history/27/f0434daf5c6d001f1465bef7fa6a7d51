@@ -1,0 +1,74 @@
+#include <stdint.h>
+
+// Enable clock Register for GPIOx (RCC_APB2ENR)
+#define RCC_BASE 0x40021000
+#define RCC_APB2ENR *((volatile uint32_t*) (RCC_BASE + 0x18))
+
+// Macros of GPIOA and GPIOB
+#define GPIOA_BASE 0x40010800
+#define GPIOB_BASE 0x40010C00
+
+#define GPIOA_CRL *((volatile uint32_t*) (GPIOA_BASE + 0x00))
+#define GPIOB_CRL *((volatile uint32_t*) (GPIOB_BASE + 0x00))
+
+#define GPIOA_CRH *((volatile uint32_t*) (GPIOA_BASE + 0x04))
+#define GPIOB_CRH *((volatile uint32_t*) (GPIOB_BASE + 0x04))
+
+#define GPIOA_IDR *((volatile uint32_t*) (GPIOA_BASE + 0x08))
+#define GPIOB_IDR *((volatile uint32_t*) (GPIOB_BASE + 0x08))
+
+#define GPIOA_ODR *((volatile uint32_t*) (GPIOA_BASE + 0x0C))
+#define GPIOB_ODR *((volatile uint32_t*) (GPIOB_BASE + 0x0C))
+
+// Macros for set, clear, toggle
+#define set(register, pin)   register |= (1 << (pin))
+#define clear(register, pin) register &= ~(1 << (pin))
+#define toggle(register, pin) register ^= (1 << (pin))
+#define get_value(register, pin) ((register & (1 << (pin))) >> (pin))
+
+int main(void)
+{
+    // Enable clock for GPIOA and GPIOB
+    set(RCC_APB2ENR, 2);  // Enable clock for GPIOA
+    set(RCC_APB2ENR, 3);  // Enable clock for GPIOB
+
+    // Initialize GPIOA and GPIOB (reset configurations)
+    GPIOA_CRL = 0;
+    GPIOA_CRH = 0;
+    GPIOB_CRL = 0;
+    GPIOB_CRH = 0;
+
+    // Configure A1 (input floating)
+    GPIOA_CRL &= ~(0xF << 4);  // Clear bits for pin A1
+    GPIOA_CRL |= (0x4 << 4);   // Set A1 as input floating (0100)
+
+    // Configure A13 (input floating)
+    GPIOA_CRH &= ~(0xF << 20); // Clear bits for pin A13
+    GPIOA_CRH |= (0x4 << 20);  // Set A13 as input floating (0100)
+
+    // Configure B1 (output push-pull)
+    GPIOB_CRL &= ~(0xF << 4);  // Clear bits for pin B1
+    GPIOB_CRL |= (0x3 << 4);   // Set B1 as output push-pull (0011)
+
+    // Configure B13 (output push-pull)
+    GPIOB_CRH &= ~(0xF << 20); // Clear bits for pin B13
+    GPIOB_CRH |= (0x3 << 20);  // Set B13 as output push-pull (0011)
+
+    // Main loop
+    while(1) {
+        // Check if A1 is pressed (logic 0)
+        if (get_value(GPIOA_IDR, 1) == 0) {
+            toggle(GPIOB_ODR, 13);  // Toggle LED on B13
+            while (get_value(GPIOA_IDR, 1) == 0);  // Debounce A1
+        }
+
+        // Check if A13 is pressed (logic 1)
+        if (get_value(GPIOA_IDR, 13) == 1) {
+            set(GPIOB_ODR, 1);  // Turn on LED on B1
+        } else {
+            clear(GPIOB_ODR, 1);  // Turn off LED on B1
+        }
+    }
+
+    return 0;
+}

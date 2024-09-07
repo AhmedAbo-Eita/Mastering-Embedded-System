@@ -1,0 +1,24 @@
+!SESSION 2024-09-07 22:43:35.635 -----------------------------------------------
+eclipse.buildId=Version 1.16.0
+java.version=17.0.11
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-09-07 22:44:47.484
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-09-07 22:44:47.496
+!MESSAGE Log4j2 initialized with config file D:\Research Files\Embedded_Systems\Mastering Embedded System\Repo\Mastering-Embedded-System\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-09-07 22:44:53.751
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-09-07 22:48:23.088
+!MESSAGE Indexed 'Lesson1_Lab_GPIO' (3 sources, 53 headers) in 2.53 sec: 1,950 declarations; 2,835 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.042%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-09-07 23:56:21.319
+!MESSAGE Indexed 'Lesson1_Lab_GPIO' (3 sources, 53 headers) in 0.144 sec: 1,950 declarations; 2,897 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.041%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-09-07 23:56:25.113
+!MESSAGE Indexed 'Lesson1_Lab_GPIO' (3 sources, 53 headers) in 0.125 sec: 1,950 declarations; 2,897 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.041%)
