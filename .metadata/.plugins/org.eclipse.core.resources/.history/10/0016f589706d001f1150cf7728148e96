@@ -58,22 +58,19 @@ int main(void)
 
 
 
-	//set pins A1,A13 as input
-	GPIOA_CRL&= ~(0b11<<4);
-	GPIOA_CRL|= (0b01<<6);  // input floating
+	// Configure pins A1 and A13 as input floating
+	GPIOA_CRL &= ~(0xF << 4);   // Clear 4 bits for A1 (input mode, floating)
+	GPIOA_CRL |=  (0b0100 << 4); // Set A1 to floating input (0b0100)
 
-	GPIOA_CRH&= ~(0b11<<20);
-	GPIOA_CRH|= (0b01<<22);  // input floating
+	GPIOA_CRH &= ~(0xF << 20);  // Clear 4 bits for A13 (input mode, floating)
+	GPIOA_CRH |=  (0b0100 << 20); // Set A13 to floating input (0b0100)
 
+	// Configure pins B1 and B13 as output push-pull (2 MHz)
+	GPIOB_CRL &= ~(0xF << 4);   // Clear 4 bits for B1
+	GPIOB_CRL |=  (0b0010 << 4); // Set B1 to output, push-pull, 2 MHz (0b0010)
 
-
-	// set pins  B1, B13 as output
-
-	GPIOB_CRL&= ~(0b11<<6);
-	GPIOB_CRL|= (0b01<<4);  // output push pull
-	GPIOB_CRH&= ~(0b11<<22);
-	GPIOB_CRH|= (0b01<<20);  // output push pull
-
+	GPIOB_CRH &= ~(0xF << 20);  // Clear 4 bits for B13
+	GPIOB_CRH |=  (0b0010 << 20); // Set B13 to output, push-pull, 2 MHz (0b0010
 
 
 	while(1){

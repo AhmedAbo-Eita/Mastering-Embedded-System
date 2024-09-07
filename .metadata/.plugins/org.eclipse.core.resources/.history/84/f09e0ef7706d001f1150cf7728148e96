@@ -69,10 +69,10 @@ int main(void)
 
 	// set pins  B1, B13 as output
 
-	GPIOB_CRL&= ~(0b11<<6);
-	GPIOB_CRL|= (0b01<<4);  // output push pull
-	GPIOB_CRH&= ~(0b11<<22);
-	GPIOB_CRH|= (0b01<<20);  // output push pull
+	GPIOB_CRL&= ~(0b1111<<4);
+	GPIOB_CRL|= (0b0100<<4);  // output push pull
+	GPIOB_CRL&= ~(0b1111<<20);
+	GPIOB_CRL|= (0b0100<<20);  // output push pull
 
 
 

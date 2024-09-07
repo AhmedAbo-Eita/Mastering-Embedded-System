@@ -71,13 +71,13 @@ int main(void)
 
 	GPIOB_CRL&= ~(0b11<<6);
 	GPIOB_CRL|= (0b01<<4);  // output push pull
-	GPIOB_CRH&= ~(0b11<<22);
-	GPIOB_CRH|= (0b01<<20);  // output push pull
+	GPIOB_CRL&= ~(0b11<<22);
+	GPIOB_CRL|= (0b01<<20);  // output push pull
 
 
 
 	while(1){
-		if(get_value(GPIOA_IDR,1)==0)
+		if(get_value(GPIOA_IDR,1)==1)
 		{
 			toggle(GPIOB_ODR,13);
 			while(get_value(GPIOA_IDR,1)==0);
